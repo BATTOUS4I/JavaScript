@@ -1,8 +1,8 @@
 - 👋 Hi, I’m @BATTOUS4I
-- 👀 I’m interested in learn
+- 👀 I’m interested in learning
 - 🌱 I’m currently learning Python
 - 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
+- 📫 How to reach me - email
 
 <!---
 BATTOUS4I/BATTOUS4I is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
