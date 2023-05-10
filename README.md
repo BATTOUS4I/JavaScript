@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @BATTOUS4I
 - 👀 I’m interested in learning
-- 🌱 I’m currently learning Python
+- 🌱 I’m currently learning JavaScript
 - 💞️ I’m looking to collaborate on ...
 - 📫 How to reach me - email
 
