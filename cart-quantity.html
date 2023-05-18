@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart Quantity</title>
+</head>
+<body>
+  <p>Cart Quantity</p>
+  <button onclick="console.log(quantity);">Cart Quantity</button>
+  
+  <button onclick="
+  if (quantity +1 > 10) {
+    alert(`The cart is full`);
+  } else {
+  quantity++; 
+  }
+  console.log(quantity);">Add Cart</button>
+
+  <button onclick="
+  if (quantity +2 > 10) {
+    alert(`The cart is full`);
+  } else {
+  quantity+=2; 
+  } 
+  console.log(quantity);">+2</button>
+
+  <button onclick="
+  if (quantity + 3 > 10) {
+    alert(`The cart is full`);
+  } else {
+    quantity+=3; 
+  }
+  console.log(quantity);">+3</button>
+
+  <button onclick="
+  if (quantity + 4 > 10) {
+    alert(`The cart is full`);
+  } else {
+    quantity+=4; 
+  } 
+  console.log(quantity);">+4</button>
+
+  <button onclick="
+  if (quantity + 5 > 10) {
+    alert(`The cart is full`);
+  } else {
+    quantity+=5; 
+  }
+  
+  console.log(quantity);">+5</button>
+
+  <button onclick="
+  if (quantity - 1 < 0) {
+    alert('Not enough items in the cart')
+  } else {
+  quantity--;
+  }
+  console.log(quantity);
+
+  ">Remove from cart</button>
+
+  <button onclick="
+  if (quantity - 2 < 0) {
+    alert('Not enough items in the cart')
+  } else {
+  quantity-=2;
+  }
+  console.log(quantity);
+  ">-2</button>
+
+  <button onclick="
+  if (quantity - 3 < 0) {
+    alert('Not enough items in the cart')
+  } else {
+  quantity-=3;
+  }
+  console.log(quantity);
+  ">-3</button>
+
+  <button onclick="console.log('Cart reset');
+  quantity = 0;
+  console.log(quantity);
+  ">Reset quantity</button>
+  
+
+
+  <script>
+
+    let quantity = 0;
+
+    let name = "Rodrigo";
+    console.log(`My name is: ${name}`);
+
+    let cost = 5 + (2 * 3) + 9;
+    console.log(`Cost of food: $${cost}`);
+
+    let tax = cost * 0.1;
+    console.log(`Tax(10%): $${tax}`);
+
+    let totalCost = cost + tax;
+    console.log(`Total cost: $${totalCost}`);
+
+  </script>
+</body>
+</html>
