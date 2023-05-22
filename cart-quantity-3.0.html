@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart Quantity</title>
+</head>
+<body>
+  <h1>Cart Quantity</h1>
+  <button onclick="console.log(quantity);">Cart Quantity</button>
+  
+  <button onclick="
+    updateQuantity(1);
+    ">Add Cart</button>
+
+  <button onclick="
+  updateQuantity(2);
+  ">+2</button>
+
+  <button onclick="
+  updateQuantity(3);
+  ">+3</button>
+
+  <button onclick="
+  updateQuantity(4);
+  ">+4</button>
+
+  <button onclick="
+  updateQuantity(5);
+  ">+5</button>
+
+  <button onclick="
+  updateQuantity(-1);
+  ">Remove from cart</button>
+
+  <button onclick="
+  updateQuantity(-2);
+  ">-2</button>
+
+  <button onclick="
+  updateQuantity(-3);
+  ">-3</button>
+
+  <button onclick="console.log('Cart reset');
+  quantity = 0;
+  console.log(quantity);
+  ">Reset quantity</button>
+  
+  <p class="js-cart-quantity">Cart Quantity: 0</p>
+
+  <script>
+
+    let quantity = 0;
+
+    function updateQuantity(change){
+      if (quantity + change > 10) {
+    alert(`The cart is full`);
+    return;
+    } else if (quantity + change < 0) {
+      alert(`Not enough items in the cart`)
+      return;
+    } else {
+      quantity += change;
+      console.log(`Cart quantity: ${quantity}`);
+      document.querySelector('.js-cart-quantity').innerHTML = `Cart Quantity: ${quantity}`;
+    }
+  }
+
+  
+    
+  </script>
+</body>
+</html>
